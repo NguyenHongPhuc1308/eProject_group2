@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <div class="logo">
+        <img src="./image/logoweb.png" alt="">
+
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/temperature.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <nav>
+                    <a href="Project.html" style="font-size: 250%;">Home</a>
+                    <a href="metric.html" style="font-size: 250%;">Measurement units</a>
+                    <a href="aboutus.html" style="font-size: 250%;">About Us</a>
+                </nav>
+                <br><br>
+                <section>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h2 style="text-align: center; margin: auto;">Mass Converter</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Ounces field to
+                                        convert the value to Grams:</p>
+
+                                    <p>
+                                        <label>Ounces: </label>
+                                        <input id="inputOunces" type="number" placeholder="Ounces"
+                                            oninput="oun(this.value)" onchange="oun(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Grams: </span> <span id="outputGrams"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Grams field to
+                                        convert the value to Ounces:</p>
+
+                                    <p>
+                                        <label>Grams: </label>
+                                        <input id="inputGram" type="number" placeholder="Gram"
+                                            oninput="gram(this.value)" onchange="gram(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Ounces: </span> <span id="outputOunces"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+
+                        </tr>
+
+
+
+
+
+                        <tr>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Pounds field
+                                        to convert the value to Kilograms:</p>
+
+                                    <p>
+                                        <label>Pounds: </label>
+                                        <input id="inputPounds" type="number" placeholder="Pounds"
+                                            oninput="pou(this.value)" onchange="pou(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Kilograms:</span> <span id="outputKilograms"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Kilograms field
+                                        to convert the value to Pounds:</p>
+
+                                    <p>
+                                        <label>Kilograms: </label>
+                                        <input id="inputKilograms" type="number" placeholder="Kilograms"
+                                            oninput="kilograms(this.value)" onchange="kilograms(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Pounds:</span> <span id="outputPound"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Short tons
+                                        field to convert the value to Metric ton:</p>
+
+                                    <p>
+                                        <label>Short ton: </label>
+                                        <input id="inputShortton" type="number" placeholder="Short ton"
+                                            oninput="short(this.value)" onchange="short(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Metric ton: </span> <span id="outputMetricton"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Metric tons
+                                        field to convert the value to Short ton:</p>
+
+                                    <p>
+                                        <label>Metric ton: </label>
+                                        <input id="inputMetricton" type="number" placeholder="Metric ton"
+                                            oninput="metric(this.value)" onchange="metric(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Short ton: </span> <span id="outputShortton"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <div class="infor">
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse"
+                                    data-target="#shortton" id="but">Information of the Short ton.</button>
+                                <div id="shortton" class="collapse">
+                                    <h1>&#62;&#62;&#62; Short ton &#60;&#60;&#60;</h1>
+                                    <h3>What is Short ton ?</h3>
+                                    <hr>
+                                    <p>
+                                        The short ton is a mass measurement unit equal to 2,000 pounds-mass (907.18474
+                                        kg). It is commonly used in the United States, where it is known as simply a
+                                        common ton.
+                                        The
+                                        symbol is " <b>T</b> ".</p>
+                                    <br>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        No information
+                                        <br><br>
+                                    </p>
+                                    <br>
+                                    <h3>Short ton conversion formulae: </h3><br>
+                                    <p> T = t * 0.91</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse"
+                                    data-target="#metricton" id="but">Information of the Metric ton.</button>
+                                <div id="metricton" class="collapse">
+                                    <h1>&#62;&#62;&#62; Metric ton (ton) &#60;&#60;&#60;</h1>
+                                    <h3>What is Metric ton (ton) ?</h3>
+                                    <hr>
+                                    <p>The tonne is a metric unit of mass equal to 1,000 kilograms. It is commonly
+                                        referred to as a metric ton in the United States. It is equivalent to
+                                        approximately 2,204.6 pounds, 1.102 short tons (US) or approximately 0.984 long
+                                        tons (UK). The official SI unit is the megagram (symbol: Mg), a less common way
+                                        to express the same mass. The symbol is " <b>t</b>".</p>
+                                    <br>
+                                    <h3>Origin and spelling</h3>
+                                    <hr>
+                                    <p>
+                                        In English, tonne is the established spelling. It is usually pronounced the same
+                                        as ton (/tʌn/), but the final "e" can also be pronounced, i.e. "tunnie"
+                                        (/ˈtʌnɪ/). In Australia, it is also pronounced /tɒn/. In the United
+                                        States, metric ton is the name for this unit used and recommended by NIST; an
+                                        unqualified mention of a ton almost invariably refers to a short ton of 2,000
+                                        pounds (907 kg), and tonne is rarely used in speech or writing. Both terms are
+                                        acceptable in Canadian usage. <br>
+
+                                        Before metrication in the UK, the unit used for most purposes was the Imperial
+                                        ton of 2,240 pounds avoirdupois or 20 hundredweight (usually referred to as the
+                                        long ton in the US), equivalent to approximately 1,016 kg, differing by about
+                                        1.6% from the tonne. The UK Weights and Measures Act 1985 explicitly excluded
+                                        from use for trade certain imperial units, including the ton, unless the item
+                                        being sold or the weighing equipment being used was weighed or certified prior
+                                        to 1 December 1980, and even then only if the buyer was made aware that the
+                                        weight of the item was measured in imperial units. <br>
+
+                                        Ton and tonne are both derived from a Germanic word in general use in the North
+                                        Sea area since the Middle Ages (cf. Old English and Old Frisian tunne, Old High
+                                        German and Medieval Latin tunna, German and French tonne) to designate a large
+                                        cask, or tun. A full tun, standing about a metre high, could easily weigh a
+                                        tonne. An English tun (an old wine cask volume measurement equivalent to
+                                        approximately 954 litres) of wine has a relative mass of approximately 954 kg if
+                                        full of pure water, a little less for wine. <br>
+
+                                        The spelling tonne pre-dates the introduction of the SI in 1960; it has been
+                                        used with this meaning in France since 1842, when there were no metric
+                                        prefixes for multiples of 10<sup>6</sup> and above, and is now used as the
+                                        standard
+                                        spelling for the metric mass measurement in most English-speaking
+                                        countries. In the United States, the unit was originally
+                                        referred to using the French words millier or tonneau, but these terms are
+                                        now obsolete. The Imperial and US customary units comparable to the tonne are
+                                        both spelled ton in English, though they differ in mass. <br>
+                                    </p>
+                                    <br>
+                                    <h3>Metric ton conversion formulae: </h3><br>
+                                    <p>
+                                        t = T * 1.10231131
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ounces"
+                                    id="but">Information of the Ounces.</button>
+                                <div id="ounces" class="collapse">
+                                    <h1>&#62;&#62;&#62; Ounces &#60;&#60;&#60;</h1>
+                                    <h3>What is Ounces ?</h3>
+                                    <hr>
+                                    <p>The common avoirdupois ounce (approximately 28.3 g) is ​1⁄16 of a common
+                                        avoirdupois pound; this is the United States customary and British imperial
+                                        ounce. It is primarily used in the United States to measure packaged foods and
+                                        food portions, postal items, areal density of fabric and paper, boxing gloves,
+                                        and so on, but is sometimes also elsewhere in the Anglosphere. <br>
+
+                                        Besides the common ounce, several other ounces are in current use:
+                                    <ul>
+                                        <li>The troy ounce of 31.1034768 grams is used for the mass of precious metals
+                                            such
+                                            as gold, silver, platinum, palladium, rhodium, etc.</li>
+                                        <li> The ounce-force is a measure of weight, that is, force, based on 1 common
+                                            ounce
+                                            under standard gravity.</li>
+                                        <li>The fluid ounce is a measure of volume.</li>
+                                    </ul>
+                                    <br>
+                                    <p> Historically, a variety of different ounces measuring mass or volume were used
+                                        in different jurisdictions by different trades. The symbol is " <b>oz</b>".</p>
+                                    </p>
+                                    <br>
+                                    <h3>History</h3>
+                                    <hr>
+                                    <p>
+                                        <b>Apothecaries' ounce</b> <br>
+                                        The obsolete apothecaries' ounce (abbreviated ℥) equivalent to the troy ounce,
+                                        was formerly used by apothecaries. <br><br>
+
+                                        <b>Maria Theresa ounce</b> <br>
+                                        "Maria Theresa ounce" was once introduced in Ethiopia and some European
+                                        countries, which was equal to the weight of one Maria Theresa thaler, or 28.0668
+                                        g. Both the weight and the value are the definition of one birr, still in
+                                        use in present-day Ethiopia and formerly in Eritrea. <br><br>
+
+                                        <b>Spanish ounce</b> <br>
+                                        Further information: Spanish customary units
+                                        The Spanish pound (Spanish libra) was 460 g.The Spanish ounce (Spanish
+                                        onza) was ​1⁄16 of a pound, i.e. 28.75 g. <br><br>
+
+                                        <b>Tower ounce</b> <br>
+                                        The Tower ounce of 450 grains was used in the English mints, the principal one
+                                        being in the Tower of London. It dates back to the Anglo-Saxon coinage weight
+                                        standard. It was abolished in favour of the Troy ounce by Henry VIII in
+                                        1527.
+                                    </p>
+                                    <br>
+                                    <h3>Ounces conversion formulae: </h3><br>
+                                    <p>
+                                        oz = g * 28,35;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#grams"
+                                    id="but">Information of the Gram.</button>
+                                <div id="grams" class="collapse">
+                                    <h1>&#62;&#62;&#62; Gram &#60;&#60;&#60;</h1>
+                                    <h3>What is Gram ?</h3>
+                                    <hr>
+                                    <p>The gram (alternative spelling: gramme) is a metric system
+                                        unit of mass. <br><br>
+
+                                        Originally defined as "the absolute weight of a volume of pure water equal to
+                                        the cube of the hundredth part of a metre [1 cm3], and at the temperature of
+                                        melting ice" (later at 4 <sup>o</sup>C, the temperature of maximum density of
+                                        water).
+                                        However, in a reversal of reference and defined units, a gram is now defined as
+                                        one thousandth of the SI base unit, the kilogram, or 1×10<sup>-3</sup> kg, which
+                                        itself is
+                                        defined by the International Bureau of Weights and Measures, not in terms of
+                                        grams, but by taking the fixed numerical value of the Planck constant h to be
+                                        6.62607015×10<sup>−34</sup> kg⋅m<sup>2</sup>⋅s<sup>-1</sup>.The symbol is "
+                                        <b>g</b>".
+                                    </p>
+                                    <br>
+                                    <h3>History</h3>
+                                    <hr>
+                                    <p>
+                                        The word gramme was adopted by the French National Convention in its 1795 decree
+                                        revising the metric system as replacing the gravet introduced in 1793. Its
+                                        definition remained that of the weight (poids) of a cubic centimetre of
+                                        water. <br><br>
+
+                                        French gramme was taken from the Late Latin term gramma. This word—ultimately
+                                        from Greek γράμμα (grámma), "letter"—had adopted a specialised meaning in Late
+                                        Antiquity of "one twenty-fourth part of an ounce" (two oboli), corresponding
+                                        to about 1.14 modern grams. This use of the term is found in the carmen de
+                                        ponderibus et mensuris ("poem about weights and measures") composed around 400
+                                        AD. There is also evidence that the Greek γράμμα was used in the same sense
+                                        at around the same time, in the 4th century, and survived in this sense into
+                                        Medieval Greek, while the Latin term did not remain current in Medieval
+                                        Latin and was recovered in Renaissance scholarship. <br><br>
+
+                                        The gram was the fundamental unit of mass in the 19th-century
+                                        centimetre–gram–second system of units (CGS). The CGS system co-existed with the
+                                        MKS system of units, first proposed in 1901, during much of the 20th century,
+                                        but the gram has been displaced by the kilogram as the fundamental unit for mass
+                                        when the MKS system was chosen for the SI base units in 1960. <br><br>
+                                    </p>
+                                    <br>
+                                    <h3>Ounces conversion formulae: </h3><br>
+                                    <p>
+                                        g =oz * 0.0352739619
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#pounds"
+                                    id="but">Information of the Pounds.</button>
+                                <div id="pounds" class="collapse">
+                                    <h1>&#62;&#62;&#62; Pounds &#60;&#60;&#60;</h1>
+                                    <h3>What is Pounds ?</h3>
+                                    <hr>
+                                    <p>The <b>pound</b> or <b>pound-mass</b> is a unit of mass used in the imperial,
+                                        United States
+                                        customary and other systems of measurement. Various definitions have been used;
+                                        the most common today is the international avoirdupois pound, which is legally
+                                        defined as exactly 0.45359237 kilograms, and which is divided into 16
+                                        avoirdupois ounces. The international standard symbol for the avoirdupois
+                                        pound is <b>lb</b>;[2] an alternative symbol is <b> lb<sub>m</sub></b> (for most
+                                        pound definitions), <b>#</b>
+                                        (chiefly in the U.S.), and <b>℔</b> or <b>″̶ </b> (specifically for the
+                                        apothecaries'
+                                        pound). <br><br>
+
+                                        The unit is descended from the Roman libra (hence the abbreviation "lb"). The
+                                        English word pound is cognate with, among others, German Pfund, Dutch pond, and
+                                        Swedish pund. All ultimately derive from a borrowing into Proto-Germanic of the
+                                        Latin expression lībra pondō ("the weight measured in libra"), in which the word
+                                        pondō is the ablative singular of the Latin noun pondus ("weight"). <br><br>
+
+                                        Usage of the unqualified term pound reflects the historical conflation of mass
+                                        and weight. This accounts for the modern distinguishing terms pound-mass and
+                                        pound-force.
+                                    </p>
+                                    <br>
+                                    <h3>History</h3>
+                                    <hr>
+                                    <p>
+                                    <h3>Relationship to the pounds</h3>
+                                    <p>
+                                        The 1878 Act said that contracts worded in terms of metric units would be deemed
+                                        by the courts to be made according to the Imperial units defined in the Act, and
+                                        a table of metric equivalents was supplied so that the Imperial equivalents
+                                        could be legally calculated. This defined, in UK law, metric units in terms of
+                                        Imperial ones. The equivalence for the pound was given as 1 lb = 453.59265 g or
+                                        0.45359 kg, which made the kilogram equivalent to about 2.2046213 lb. In 1883,
+                                        it was determined jointly by the Standards Department of the Board of Trade and
+                                        the Bureau International that 0.4535924277 kg was a better approximation, and
+                                        this figure, rounded to 0.45359243 kg was given legal status by an Order in
+                                        Council in May 1898. <br><br>
+
+                                        However, in 1963, a new Weights and Measures Act reversed this relationship and
+                                        the pound was defined for the first time as a mass equal to 0.45359237 kg to
+                                        match the definition of the international pound agreed in 1959.
+                                    </p>
+                                    </p>
+                                    <br>
+                                    <h3>Pounds conversion formulae: </h3><br>
+                                    <p>
+                                        lb = 0.45359237 * kg
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse"
+                                    data-target="#kilograms" id="but">Information of the Kilograms.</button>
+                                <div id="kilograms" class="collapse">
+                                    <h1>&#62;&#62;&#62; Kilograms &#60;&#60;&#60;</h1>
+                                    <h3>What is Kilograms ?</h3>
+                                    <hr>
+                                    <p>The kilogram (also kilogramme) is the base unit of mass in the International
+                                        System of Units (SI), the current metric system. It is a widely used measure in
+                                        science, engineering and commerce worldwide, and is
+                                        often simply called a kilo in everyday speech.The symbol is "
+                                        <b>kg</b>". <br><br>
+
+                                        The kilogram was originally defined in 1795 as the mass of one litre of water.
+                                        This was a simple definition, but difficult to use in practice. By the latest
+                                        definitions of the unit, however, this relationship still has an accuracy of 30
+                                        ppm. In 1799, the platinum Kilogramme des Archives replaced it as the standard
+                                        of mass. In 1889, a cylinder of platinum-iridium, the International Prototype of
+                                        the Kilogram (IPK) became the standard of the unit of mass for the metric
+                                        system, and remained so until 2019. The kilogram was the last of the SI units
+                                        to be defined by a physical artefact. <br><br>
+
+                                        The kilogram is now defined in terms of the second and the metre, based on fixed
+                                        fundamental constants of nature. This allows a properly-equipped metrology
+                                        laboratory to calibrate a mass measurement instrument such as a Kibble balance
+                                        as the primary standard to determine an exact kilogram mass, although the IPK
+                                        and other precision kilogram masses remain in use as secondary standards for all
+                                        ordinary purposes.
+                                    </p>
+                                    <br>
+                                    <h3>History</h3>
+                                    <hr>
+                                    <p>
+                                    <h3>Relationship to the pounds</h3>
+                                    <p>
+                                        The 1878 Act said that contracts worded in terms of metric units would be deemed
+                                        by the courts to be made according to the Imperial units defined in the Act, and
+                                        a table of metric equivalents was supplied so that the Imperial equivalents
+                                        could be legally calculated. This defined, in UK law, metric units in terms of
+                                        Imperial ones. The equivalence for the pound was given as 1 lb = 453.59265 g or
+                                        0.45359 kg, which made the kilogram equivalent to about 2.2046213 lb. In 1883,
+                                        it was determined jointly by the Standards Department of the Board of Trade and
+                                        the Bureau International that 0.4535924277 kg was a better approximation, and
+                                        this figure, rounded to 0.45359243 kg was given legal status by an Order in
+                                        Council in May 1898. <br><br>
+
+                                        However, in 1963, a new Weights and Measures Act reversed this relationship and
+                                        the pound was defined for the first time as a mass equal to 0.45359237 kg to
+                                        match the definition of the international pound agreed in 1959. <br><br>
+
+                                        The kilogram is defined in terms of three fundamental physical constants: The
+                                        speed of light <i>c</i>, a specific atomic transition frequency ΔνCs, and the
+                                        Planck
+                                        constant <i>h</i>. The formal definition is: <br><br>
+
+                                        The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the
+                                        fixed numerical value of the Planck constant <i>h</i> to be
+                                        6.62607015×10<sup>−34</sup> when
+                                        expressed in the unit J⋅s, which is equal to kg⋅m<sup>2</sup>⋅s<sup>-1</sup>,
+                                        where the metre and the
+                                        second are defined in terms of <i>c</i> and Δν<sub>Cs</sub>. <br><br>
+
+                                        This definition makes the kilogram consistent with the older definitions: the
+                                        mass remains within 30 ppm of the mass of one litre of water.
+                                    </p>
+                                    </p>
+                                    <br>
+                                    <h3>Pounds conversion formulae: </h3><br>
+                                    <p>
+                                        kg = 2.20462262 * lb
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <footer>
+                    Site built by Group2_T1-2008-A0 &copy; Dec-2020.
+                </footer>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    </div>
+
+
+    <script>
+        function oun(valNum) {
+            document.getElementById("outputGrams").innerHTML = valNum / 0.035274;
+        }
+
+        function pou(valNum) {
+            document.getElementById("outputKilograms").innerHTML = valNum / 2.2046;
+        }
+
+        function short(valNum) {
+            document.getElementById("outputMetricton").innerHTML = valNum * 0.91;
+        }
+
+        function metric(valNum) {
+            document.getElementById("outputShortton").innerHTML = valNum * 1.10231131;
+        }
+
+        function gram(valNum) {
+            document.getElementById("outputOunces").innerHTML = valNum * 0.0352739619;
+        }
+
+        function kilograms(valNum) {
+            document.getElementById("outputPound").innerHTML = valNum * 0.45359237;
+        }
+
+    </script>
+</body>
+
+</html>

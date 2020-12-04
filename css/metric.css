@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+body { 
+    background-color:#e3e3e3;
+    font-family:Arial,Helvetica,sans-serif;
+    margin:  auto;
+    min-width:736px;
+    width:100%;
+}
+
+
+
+.type,.typeConv,.feature,.featureConv,.unit,.tounit,.unitConv,.popLink {
+    display:block;
+    margin:auto;
+    height:50px;
+    background-color:#a6a6a6;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0 0 0 ;
+    text-decoration: none;
+    width: 92%;
+}
+
+
+
+.typeConv,.popLink {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    min-height: 50px;
+    padding: 0 0 0 ;
+    width: 80%;
+}
+
+            
+            
+            
+            .bluebg {
+                background-color: #3e7589;
+            }
+
+            .greybg {
+                background-color: #a6a6a6;
+            }
+            
+            .type:hover,.typeConv:hover,.feature:hover,.featureConv:hover,.unit:hover,.tounit:hover,.convertForm a:hover,#popular a:hover,.popLink:hover {
+                background-color:#413f3f;
+            }
+           
+
+	    
+                       
+           
+            
+            .type:hover {
+                background-color:#413f3f;
+            }
+            .currency:hover {
+                background-image: url(../image/curency2.png);
+            }
+      
+            .temperature {
+                background-image: url(../image/temperature.png);
+            }
+            
+            .weight {
+                background-image: url(../image/mass.png);
+            }
+            
+            .length {
+                background-image: url(../image/leght.png);
+            }
+            
+            .area {
+                background-image: url(../image/area.png);
+            }
+            
+            .volume {
+                background-image: url(../image/volume.png);
+            }
+            
+            .currency {
+                background-image: url(../image/currency.png);
+                
+            }  
+             .blueBg {
+                height:auto;
+                background-color:#3e7589;
+                width: 80%
+            }            
+          
+
+/* iOS keypad */
+
+
+#bookmark-this:hover {
+  background: #ec971f;
+  border: 1px solid #d58512;
+  text-decoration: none;
+}
+
+
+#typeMenu a {
+    display: block;
+    float: left;
+    
+    height: 50px;
+    margin: 1px 1px;
+    min-width: 300px;
+}
+
+.typeConv {
+    padding: 0 0 0 5%;
+}
+
+
+
+
+.typeConv {
+    padding: 0 0 0 50px;
+}
+
+

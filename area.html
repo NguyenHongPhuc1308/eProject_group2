@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <div class="logo">
+        <img src="./image/logoweb.png" alt="">
+
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/temperature.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <nav>
+                    <a href="Project.html" style="font-size: 250%;">Home</a>
+                    <a href="metric.html" style="font-size: 250%;">Measurement units</a>
+                    <a href="aboutus.html" style="font-size: 250%;">About Us</a>
+                </nav>
+                <br><br>
+
+                <section>
+
+                    <body>
+                        <h2>Area Converter</h2>
+                        <p class=" container">
+                            <label>Square inches</label>
+                            <input id="inputSInches" type="number" placeholder="Square Inches"
+                                oninput="SquareInchesConverter(this.value)"
+                                onchange="SquareInchesConverter(this.value)">
+                            <label>Square millimeters:</label> <span id="outputSMillimeters"></span>
+                        </p>
+
+
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#SInchestoSMillimetersformula">Show formula</button>
+                            <div id="SInchestoSMillimetersformula" class="collapse">
+                                <h3>Square inches to Square millimeters formula</h3>
+
+                                mm² =in²/0.0015500
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSInches">More information: Square Inches</button>
+                            <div id="MoreinformationSInches" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+
+                                <li>in²</li>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSIMillimeters">More information: Square
+                                Millimeters</button>
+                            <div id="MoreinformationSIMillimeters" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+
+                                <li>mm²</li>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <p class=" container">
+                            <label>Square feet</label>
+                            <input id="inputSFeet" type="number" placeholder="Square Feet"
+                                oninput="SquareFeetConverter(this.value)" onchange="SquareFeetConverter(this.value)">
+                            <label>Square meters:</label> <span id="outputSMeter"></span>
+                        </p>
+
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#SFeettoSMetersformula">Show formula</button>
+                            <div id="SFeettoSMetersformula" class="collapse">
+                                <h3>Square Feet to Square Meter formula</h3>
+
+                                m² =ft²/10.764
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSFeet">More information: Square Feet</button>
+                            <div id="MoreinformationSFeet" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+                                <ul>
+                                    <li>sq ft</li>
+                                    <li>ft²</li>
+                                    <li>When describing architecture or real estate, the square foot is often symbolised
+                                        as a square with a line or slash through it.</li>
+                                </ul>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+                                <h3>Worldwide use:</h3>
+                                <ul>
+                                    <li>The square foot is used mainly in the United States, Canada and the United
+                                        Kingdom as a measurement of area.</li>
+                                </ul>
+                                <h3>Description:</h3>
+                                <p>The square foot is a unit of area used in the imperial and U.S. customary measurement
+                                    systems.</p>
+                                <p>A square measurement is the two-dimensional derivative of a linear measure, so a
+                                    square foot is defined as the area of a square with sides 1 ft in length.</p>
+                                <h3>Definition:</h3>
+                                <p>In metric terms a square foot is a square with sides 0.3048 metres in length. One
+                                    square foot is the equivalent to 0.09290304 square metres.</p>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSMeters">More information: Square Meters</button>
+                            <div id="MoreinformationSMeters" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+                                <ul>
+
+                                    <li>m²</li>
+
+                                </ul>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        <br>
+
+
+                        <p class=" container">
+                            <label>Square yard</label>
+                            <input id="inputSYard" type="number" placeholder="Square Yard"
+                                oninput="SquareYardConverter(this.value)" onchange="SquareYardConverter(this.value)">
+                            <label>Square meters:</label> <span id="outputSMeter1"></span>
+                        </p>
+
+
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#SYardtoSMetersformula">Show formula</button>
+                            <div id="SYardtoSMetersformula" class="collapse">
+                                <h3>Square yard to Square meter formula</h3>
+
+                                m² =yd²/1.1960
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSYard">More information: Square Yard</button>
+                            <div id="MoreinformationSYard" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+                                <ul>
+
+                                    <li>yd²</li>
+
+                                </ul>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSMeters1">More information: Square Meters</button>
+                            <div id="MoreinformationSMeters1" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+                                <ul>
+
+                                    <li>m²</li>
+
+                                </ul>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <br>
+
+
+
+                        <p class=" container">
+                            <label>Acres</label>
+                            <input id="inputAcres" type="number" placeholder="Square Acres "
+                                oninput="AcresConverter(this.value)" onchange="AcresConverter(this.value)">
+                            <label>Hectares:</label> <span id="outputHectares"></span>
+                        </p>
+
+
+
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#AcrestoHectaresformula">Show formula</button>
+                            <div id="AcrestoHectaresformula" class="collapse">
+                                <h3>Acres to Hectares formula</h3>
+
+                                ha =ac/2.4711
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSAcres">More information: Square Acres</button>
+                            <div id="MoreinformationSAcres" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+                                <ul>
+
+                                    <li>ac</li>
+
+                                </ul>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSHectares">More information: Square Hectares</button>
+                            <div id="MoreinformationSHectares" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+                                <ul>
+
+                                    <li>ha²</li>
+
+                                </ul>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+
+                        <br>
+
+
+
+
+
+                        <p class=" container">
+                            <label>Square miles</label>
+                            <input id="inputSMiles" type="number" placeholder="Square Miles"
+                                oninput="SquareMilesConverter(this.value)" onchange="SquareMilesConverter(this.value)">
+                            <label>Square kilometers:</label> <span id="outputSKilometers"></span>
+                        </p>
+
+
+
+
+
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#SMilestoSKilometersformula">Show formula</button>
+                            <div id="SMilestoSKilometersformula" class="collapse">
+                                <h3>Square miles to Square kilometers formula</h3>
+
+                                km² =mi²/0.38610
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSMiles">More information: Square Miles</button>
+                            <div id="MoreinformationSMiles" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+                                <ul>
+
+                                    <li>mi²</li>
+
+                                </ul>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <button type="button" class="btn btn-info" data-toggle="collapse"
+                                data-target="#MoreinformationSKilometers">More information: Square Kilometers</button>
+                            <div id="MoreinformationSKilometers" class="collapse">
+                                <h3>Abbreviations / Symbols:</h3>
+                                <ul>
+
+                                    <li>km²</li>
+
+                                </ul>
+                                <h3>Unit of:</h3>
+                                <ul>
+                                    <li>Area</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                    </body>
+
+                    </html>
+                </section>
+
+                <hr>
+                <footer>
+                    Site built by Group2_T1-2008-A0 &copy; Dec-2020. 
+                </footer>
+
+
+            </div>
+        </div>
+        <br><br>
+    </div>
+    </div>
+
+    <script>
+        function SquareFeetConverter(SFeet) {
+            document.getElementById("outputSMeter").innerHTML = SFeet / 10.764;
+        }
+        function SquareInchesConverter(SInches) {
+            document.getElementById("outputSMillimeters").innerHTML = SInches / 0.0015500;
+        }
+        function SquareYardConverter(SYard) {
+            document.getElementById("outputSMeter1").innerHTML = SYard / 1.1960;
+        }
+        function AcresConverter(Acres) {
+            document.getElementById("outputHectares").innerHTML = Acres / 2.4711;
+        }
+        function SquareMilesConverter(SMiles) {
+            document.getElementById("outputSKilometers").innerHTML = SMiles / 0.38610;
+        }
+
+
+    </script>
+</body>
+
+</html>

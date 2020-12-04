@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <div class="logo">
+    <img src="./image/logoweb.png" alt="">
+
+  </div>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/temperature.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <nav>
+            <a href="Project.html" style="font-size: 250%;">Home</a>
+            <a href="metric.html" style="font-size: 250%;">Measurement units</a>
+            <a href="aboutus.html" style="font-size: 250%;">About Us</a>
+        </nav>
+        <br><br>
+       <section>
+           
+
+<body>
+
+    <h2>Length Converter</h2>
+     <p class=" container">
+        <label>Inches</label>
+        <input id="inputInches" type="number" placeholder="Inches" oninput="InchesConverter(this.value)" onchange="InchesConverter(this.value)"style="color: red; background-color: yellowgreen;font-weight: bold;"><br>
+        <label>Millimeters:</label> <span id="outputMillimeters" style="background-color: slateblue; color: lightyellow;"></span>
+    </p>
+    
+       <script>
+       function InchesConverter(inches) {
+       document.getElementById("outputMillimeters").innerHTML=inches*25.4;
+        }
+       </script>
+    
+    <div class="container">
+       <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#InchestoMillimetersformula" id="but">Show formula</button>
+       <div id="InchestoMillimetersformula" class="collapse">
+        <h3>Inches to Millimeters formula</h3>
+        
+       <p> mm = In/0.039370 </p>
+       </div>
+     </div>
+    
+    
+    <div class="container">
+     <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#MoreinformationInches" id="but">More information: Inches</button>
+     <div id="MoreinformationInches" class="collapse">
+         <h2>Inches</h2>
+      <h3>Abbreviations / Symbols:</h3>
+      <ul>
+          <li>in</li>
+          <li>" (a double prime)</li>
+          <li>(For example, six inches can be symbolised as either 6in or 6").</li>
+      </ul>
+          <h3>Unit of:</h3>
+          <ul>
+              <li>Length / distance</li>
+          </ul>
+          <h3>Worldwide use:</h3>
+          <ul>
+              <li>The inch is both an imperial unit and part of the US system of customary units and as such the inch has widely been used in the past. The inch is still a common unit in the US, and is popular in Canada and the UK. Japanese manufacturers such as Sony and Toshiba commonly use inches to describe the size of monitors.</li>
+          </ul>
+    
+          <h3>Description:</h3>
+          <p>The inch is a unit of length used primarily in the imperial and U.S. customary measurement systems, representing 1/12 of a foot and 1/36 of a yard.</p>
+    
+          <h3>Definition:</h3>
+          <p>Use of the inch can be traced back as far as the 7th century. The first explicit definition we could find of its length was after 1066 when it was defined as the length of three barleycorns. This was not a satisfactory reference as barleycorn lengths vary naturally. The British Standards Institute defined the inch as 25.4mm in 1930 in the document "Metric Units in Engineering: Going SI". In March 1932 the American Standards Association were asked to rule on whether to adopt the same value (at the time the American inch was 1/.03937 mm which approximated to 25.400051 mm). Because the values were so close, and because Britain has already settled on that value, the ASA adopted this value on March 13, 1933.</p>
+    
+          <h3>Origin:</h3>
+          <p>The inch has been used as a unit of measurement in the United Kingdom since at least the seventh century, and in 1066 was defined as being equal to the length of three dried barleycorns placed end-to-end (a definition which survived for several centuries). <br>
+          In the 12th Century the Scottish inch was defined as being equivalent to the width of an average man's thumb at the base of the nail. Similar units of measurement existed in many areas of what is now modern Europe, with the word for inch in Portuguese, French, Italian, Spanish and numerous other languages being the same or very similar to the word for thumb. <br>
+          The English word inch derives from the Latin uncia, meaning one-twelfth part (an inch traditionally being 1/12 of a foot). <br>
+          Even in the twentieth century various definitions of the inch were still applied around the world, although these differed by less than 0.001%. In 1930 the British Standards Institution adopted an inch of exactly 25.4mm, with the American Standards Association doing likewise in 1933, and the first country to legally adopt this definition was Canada in 1951. <br>
+          In 1959 the United States and British Commonwealth countries signed a treaty agreeing to the standardised 25.4mm definition. <br>
+          The English word inch is derived from the Latin word uncia, which means “one twelfth” – Because an inch was defined as being one twelfth of a foot. The word inch in other languages is often similar to the word ‘thumb’, as thumb width was a measure used to define an inch – for instance King David 1 of Scotland defined the inch as being “the breadth of the thumb of a middle sized man, measured at the root of the nail’ . In England we can find the definition of an inch as the length of 3 barleycorns in a statue of Edward 2nd in 1324.
+          </p>
+    
+          <h3>Common references:</h3>
+          <ul>
+              <li>A United States quarter (25 cent) coin is just under one inch in diameter.</li>
+              <li>A fully-grown human eyeball is roughly one inch in diameter.</li>
+              <li>1 foot, 12 inches</li>
+              <li>1 metre, 39.37008 inches</li>
+              <li>45 RPM vinyl singles – the popular way to buy music from the 1960s to 1990s – Normally had a diameter of 7 inches. Long players (LPs) normally had a diameter of 12 inches</li>
+              <li>Rulers normally come marked for 30cm and 12 inches, since 12 inches = 30.048 cm</li>
+              <li>A can of Coke is 4.83 inches high</li>
+          </ul>
+    
+          <h3>Usage context:</h3>
+          <p>In 1995 in the UK the inch (along with the foot, yard and mile) was officially stated as the primary units of measurement for road signs and related measurements of distance and speed. In other contexts metric measurements are now the primary system, although inches are still often used informally, particularly by people who were born and educated in pre-decimal Britain.</p>
+          <p>In the United States, surveyors use the U.S. Survey inch, defined as 1/39.37 of a metre, derived from the Mendenhall Order of 1893 that equated 1 foot with 1200/3937 meters.</p>
+    
+          <h3>Component units:</h3>
+          <ul>
+              <li>The inch is traditionally the smallest whole unit of length measurement in the imperial system, with measurements smaller than an inch being stated using the fractions 1/2, 1/4 , 1/8, 1/16, 1/32 and 1/64 of an inch.</li>
+              <li>In the UK in the early 19th century precision engineers started to use one thousandths of an inch as greater measuring accuracy became possible, and multiples of this new fraction subsequently became known as a thou.</li>
+          </ul>
+    
+          <h3>Multiples:</h3>
+          <ul>
+              <li>12 inches = 1 ft (foot)</li>
+              <li>36 inches = 1 yd (yard)</li>
+          </ul>
+      </ul>
+    </div>
+     </div>
+    
+    
+    <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#MoreinformationMillimeters" id="but">More information: Millimeters</button>
+        <div id="MoreinformationMillimeters" class="collapse">
+         <h2>Millimeters </h2>
+         
+        <h3>Abbreviation/Symbol:</h3>
+         <ul>
+             <li>mm</li>
+             <li>mil (informal)</li>
+         </ul>
+    
+         
+         <h3>Unit of:</h3>
+         <ul>
+             <li>
+                Length
+             </li>
+         </ul>
+         
+         <h3>Worldwide use:</h3>
+         <ul>
+             <li>
+                The millimetre, as part of the metric system, is used as a measure of length across the globe. The most notable exception is the United States, where the imperial system is still used for most purposes.
+             </li>
+         </ul>
+         
+         <h3>Definition:</h3>
+         <p>The millimetre is a unit of length in the metric system, equivalent to one thousandth of a metre (the SI base unit of length).</p>
+         <p>One meter was defined in 1983 by the 17th conference of weights and measures as “the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second” and the millimetre by definition is derived as being 1/1000th of that value.</p>
+         
+         <h3>Origin:</h3>
+         <p>John Wilkins first proposed the length of a “seconds pendulum” as a universal measurement – ie a measurement that could be carried out, to avoid a definition with respect to a stored reference unit. He thought that a pendulum that made one half oscillation per second would have a fixed length. He was almost correct, but it was later found there is a slight difference in this length around the world. Because of this variability, the Academy of Sciences devised a new measure, equal to 1/10000000 of the distance from the Equator to the North Pole, measured along the meridian through Paris. This measurement was used to create the international prototype meter – a metal bar stored at the BIPM’s headquarters. In time this standard was dropped in favour of more accurate measures – firstly in 1960 the 11th conference of weights and measures defined the meter as “1,650763.73 wavelengths of the orange-red emission line of a krypton-86 atom (in a vacuum)”. Finally in 1983 the 17th conference defined the meter as “the distance travelled by light in a vacuum in 1/299792458 of a second” which therefore leads to a definition of a millimetre as the distance travelled by light in a vacuum in 1/299792458000 of a second.</p>
+         
+         <h3>Common references:</h3>
+         <ul>
+             <li>There are 25.4 millimetres in one inch.</li>
+             <li>The head of a pin is approximately 2mm diameter.</li>
+             <li> A CD is approximately 1.2mm thick.</li>
+             <li>00 gauge model railways measure 16.5mm between rails.</li>
+             <li>Grade 1 hair clippers will cut hair to approximately 3 mm in length (grade 2 cuts to 6 mm, grade 3 to 9 mm etc)</li>
+             <li>1 metre, 1000 mm</li>
+             <li>A piece of normal legal paper is approximately .1mm thick</li>
+             <li>A fine human hair is approximately .04mm wide</li>
+             <li> An average matchstick is approximately 2mm wide</li>
+             <li>An AA battery can be between 49.2 and 50.5mm from its flat end to the end of the battery button</li>
+         </ul>
+    
+         <h3>Usage context:</h3>
+         <p>Millimetres are used as a standard measure of length in all manner of engineering and commercial applications where accuracy greater than the closest centimetre is required.</p>
+         <p>Where even greater accuracy must be measured or expressed, fractions of a millimetre are used to three decimal places.</p>
+         <p>Millimetres are commonly used to describe the calibre of small munitions and the weaponry used to fire them, for example the Uzi 9 mm assault rifle.</p>
+         
+         <h3>Component units:</h3>
+         <ul>
+             <li>1/1,000 mm = one micrometre</li>
+             <li>1/1,000,000 mm = one nanometre</li>
+             <li>Further, progressively small units include the picometre, femtometre, attometre, zeptometre and yoctometre.</li>
+         </ul>
+         
+         <h3>Multiples:</h3>
+         <ul>
+             <li>There are numerous units for expressing multiples of the millimetre, but these are defined by their relationship to the metre (the SI base unit of length), rather than the millimetre.</li>
+             <li>10 mm = 1 centimetre (cm)</li>
+             <li>1000mm = 1 metre (m)</li>
+         </ul>
+        
+        </div>
+      </div>
+    
+    
+    <br>
+    
+    
+       <p class="container">
+        <label>Feet</label>
+        <input id="inputFeet" type="number" placeholder="Feet" oninput="FeetConverter(this.value)" onchange="FeetConverter(this.value)" style="color: red; background-color: yellowgreen;font-weight: bold;"> <br>
+     <label>Meters: </label><span id="outputMeters"  style="background-color: slateblue; color: lightyellow;"></span>
+    </p>
+    
+    
+       <script>
+       function FeetConverter(Feet) {
+       document.getElementById("outputMeters").innerHTML=Feet*0.3048;
+        }
+       </script>
+    
+       <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#FeettoMeterformula" id="but">Show formula</button>
+        <div id="FeettoMeterformula" class="collapse">
+         <h3>Feet to Meter formula</h3>
+         
+         <p>m = ft/3.2808</p>
+        </div>
+      </div>
+    
+    
+    <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#MoreinfomationFeet" id="but">More infomation: Feet</button>
+        <div id="MoreinfomationFeet" class="collapse">
+         <h2>Feet</h2>
+         
+         <h3>Abbreviation/Symbol:</h3>
+         <ul>
+             <li> ft</li>
+             <li>' (the prime symbol)</li>
+             <li> (Meaning ten feet can be symbolised as either 10 ft or 10')</li>
+
+        </ul>
+        <h3>Unit of:</h3>
+        <ul>
+            <li>
+                Length / distance
+            </li>
+        </ul>
+         
+         
+        <h3>Worldwide use:</h3>
+        <ul>
+            <li>Primarily used as an official unit of measurement in the United States. Canada also recognises the foot as an alternative unit of measurement (to standard metric), and the foot continues to be commonly used in the United Kingdom.</li>
+            <li>The foot is also used globally to measure altitude in the aviation industry.</li>
+        </ul>
+         
+         
+         <h3>Description:</h3>
+         
+         
+         <p>The foot is a unit of length used in the imperial and U.S. customary measurement systems, representing 1/3 of a yard, and is subdivided into twelve inches.</p> 
+         <h3>Definition:</h3>
+         
+         
+         In 1959 the international yard and pound agreement (between the United States and countries of the Commonwealth of Nations) defined a yard as being exactly 0.9144 metres, which in turn defined the foot as being exactly 0.3048 metres (304.8 mm).
+         <h3>Origin:</h3>
+         
+         
+         <p>The foot has been used as a unit of measurement throughout much of recorded history – including in Ancient Greece and the Roman Empire – and the origin of the name is generally accepted to relate to the average size of an adult, male foot (or possibly shoe). Originally divided into sixteen component units, the Romans also divided the foot into twelve uncia – the origin of the modern English term inch.</p>
+         
+         <p>The foot continued to be used throughout Europe for most of the last two thousand years, although national and regional variations were common. Depending on where (and when) the term foot was used, it could refer to lengths as small as 273 mm or as large as 357 mm. The foot also came to be commonly used in English-speaking countries around the world.</p>
+         <p> Use of the foot declined as most countries adopted the metric system, starting with France in the late 18th century.</p>
+         
+        
+         <h3>Common references:</h3>
+         
+         <ul>
+             <li>An association football (soccer) goal is eight feet high by eight yards (24 ft) wide.</li>
+             <li>"Six feet under" is a euphemistic phrase for burial in a grave, or more broadly a dead person is sometimes described as being "six feet under".</li>
+             <li>"Five Feet High and Rising" (a reference to flood water) was used as a song title by Johnny Cash. De La Soul subsequently titled their 1989 hit hip hop album "3 Feet High and Rising".</li>
+         </ul>
+         
+         
+         <h3>Usage context:</h3>
+         
+         <p> In 1995 in the UK the foot, along with the inch, yard and mile, were officially stated as the primary units of measurement for road signs and related measurements of distance and speed. In other contexts metric measurements are now the primary system, although feet are still often used on an informal basis, particularly by people who were born and educated in pre-decimal Britain.</p>
+        
+         <p> The foot is also used as a base unit in the FPS system, which uses feet, pounds and seconds to derive other units of measurement, such as the poundal (ft•lb-m•s-2) a unit of measurement for force. (The FPS system has been largely replaced by the metric m.k.s. system, based around metres, kilograms and seconds).</p>
+        
+         <h3>Component units:</h3>
+         <ul>
+             <li>12 inches = 1 ft</li>
+         </ul>
+         
+         
+         <h3>Multiples:</h3>
+         <ul>
+             <li>3 feet = 1 yd (yard)</li>
+         </ul>
+         
+         
+         
+        </div>
+      </div>
+    
+    
+      <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#MoreinformationMeters" id="but">More information: Meters</button>
+        <div id="MoreinformationMeters" class="collapse">
+         <h2> Meters</h2>
+         
+        
+    <h3>Abbreviation/Symbol:</h3>
+    <ul>
+        <li>
+            m
+        </li>
+    </ul>
+    
+    <h3>Unit of:</h3>
+    <ul>
+        <li>
+            Length / distance
+        </li>
+    </ul>
+    
+    <h3>Worldwide use:</h3>
+    <ul>
+        <li>
+            The metre, as part of the metric system, is used as a measure of distance across the globe, the primary exception being the United States, where the imperial system is used for most purposes.
+        </li>
+    </ul>
+    
+    <h3>Description:</h3>
+    <p>The metre is a unit of length in the metric system, and is the base unit of length in the International System of Units (SI).</p>
+    <p>As the base unit of length in the SI and other m.k.s. systems (based around metres, kilograms and seconds) the metre is used to help derive other units of measurement such as the newton, for force.</p>
+    
+    <h3>Definition:</h3>
+    <p>1 m is equivalent to 1.0936 yards, or 39.370 inches.</p>
+    <p>Since 1983, the metre has been officially defined as the length of the path travelled by light in a vacuum during a time interval of 1/299,792,458 of a second.</p>
+    
+    <h3>Origin:</h3>
+    <p>A decimal-based unit of measurement had been proposed as early as the late 17th century, with the name metre being derived from the Greek métron katholikón, meaning 'universal measure'.</p>
+    <p>An early definition of a metre was "the length of a pendulum with a half-period of one second" By the 18th century a definition based on "one ten-millionth of the length of the Earth's meridian along one quadrant" (the distance from the equator to the North Pole) was gaining favour, and this was the accepted definition when France adopted the metric system in 1795.</p>
+    <p>Prototype metre bars - first brass, later platinum then a platinum/iridium alloy - were manufactured as successive standards of the metre. In 1960 the metre was redefined using the wavelengths of radiation, before the current definition, relating the metre to the speed of light, was adopted in 1983.</p>
+    
+    <h3>Common references:</h3>
+    <ul>
+        <li>A human male of average height is around 1.75 m tall.</li>
+        <li>The hurdles used in Olympic 110 m hurdles races are 1.067 m high.</li>
+        <li>The tallest building in the world (as of 2012), the Burj Khalifa in Dubai, is 828 m tall.</li>
+        <li>The Empire State Building in New York City is 381 m high.</li>
+        <li>The standard gauge of railway tracks (the distance between the rails) is 1.435 m.</li>
+    </ul>
+    
+    <h3>Component units:</h3>
+    <ul>
+        <li>1/100 m = one centimetre</li>
+        <li>1/1,000 m = one millimetre</li>
+        <li>See also micrometre, nanometre, picometre, femtometre, attometre, zeptometre and yoctometre.</li>
+    </ul>
+    
+    <h3>Multiples:</h3>
+    <ul>
+        <li>The most commonly used multiple is the kilometre (1,000 m), but there are numerous other SI multiples of the metre, including decametre (10 m), hectometre (100 m) and megametre (one million metres).</li>
+        <li>The largest SI multiple of the metre is the yottametre, (1,000,000,000,000,000,000,000,000 metres).</li>
+    </ul>
+        </div>
+      </div>
+       <br>
+       <p class="container">
+        <label>Yards</label>
+        <input id="inputYards" type="number" placeholder="Yards" oninput="YardsConverter(this.value)" onchange="YardsConverter(this.value)" style="color: red; background-color: yellowgreen;font-weight: bold;"> <br>
+      Meters: <span id="outputMeters1" style="background-color: slateblue; color: lightyellow;"></span>
+    </p>
+    
+    
+       <script>
+       function YardsConverter(Yards) {
+       document.getElementById("outputMeters1").innerHTML=Yards*0.9144;
+        }
+       </script>
+    
+    
+    <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#YardstoMeterformula"id="but">Show formula</button>
+        <div id="YardstoMeterformula" class="collapse">
+         <h3>Inches to Millimeters formula</h3>
+         
+        <p> m = yd/1.0936</p>
+        </div>
+      </div>
+    
+      
+      <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#MoreinformationMeters1"id="but">More information: Meters</button>
+        <div id="MoreinformationMeters1" class="collapse">
+         <h2> Meters</h2>
+         
+        
+    <h3>Abbreviation/Symbol:</h3>
+    <ul>
+        <li>
+            m
+        </li>
+    </ul>
+    
+    <h3>Unit of:</h3>
+    <ul>
+        <li>
+            Length / distance
+        </li>
+    </ul>
+    
+    <h3>Worldwide use:</h3>
+    <ul>
+        <li>
+            The metre, as part of the metric system, is used as a measure of distance across the globe, the primary exception being the United States, where the imperial system is used for most purposes.
+        </li>
+    </ul>
+    
+    <h3>Description:</h3>
+    <p>The metre is a unit of length in the metric system, and is the base unit of length in the International System of Units (SI).</p>
+    <p>As the base unit of length in the SI and other m.k.s. systems (based around metres, kilograms and seconds) the metre is used to help derive other units of measurement such as the newton, for force.</p>
+    
+    <h3>Definition:</h3>
+    <p>1 m is equivalent to 1.0936 yards, or 39.370 inches.</p>
+    <p>Since 1983, the metre has been officially defined as the length of the path travelled by light in a vacuum during a time interval of 1/299,792,458 of a second.</p>
+    
+    <h3>Origin:</h3>
+    <p>A decimal-based unit of measurement had been proposed as early as the late 17th century, with the name metre being derived from the Greek métron katholikón, meaning 'universal measure'.</p>
+    <p>An early definition of a metre was "the length of a pendulum with a half-period of one second" By the 18th century a definition based on "one ten-millionth of the length of the Earth's meridian along one quadrant" (the distance from the equator to the North Pole) was gaining favour, and this was the accepted definition when France adopted the metric system in 1795.</p>
+    <p>Prototype metre bars - first brass, later platinum then a platinum/iridium alloy - were manufactured as successive standards of the metre. In 1960 the metre was redefined using the wavelengths of radiation, before the current definition, relating the metre to the speed of light, was adopted in 1983.</p>
+    
+    <h3>Common references:</h3>
+    <ul>
+        <li>A human male of average height is around 1.75 m tall.</li>
+        <li>The hurdles used in Olympic 110 m hurdles races are 1.067 m high.</li>
+        <li>The tallest building in the world (as of 2012), the Burj Khalifa in Dubai, is 828 m tall.</li>
+        <li>The Empire State Building in New York City is 381 m high.</li>
+        <li>The standard gauge of railway tracks (the distance between the rails) is 1.435 m.</li>
+    </ul>
+    
+    <h3>Component units:</h3>
+    <ul>
+        <li>1/100 m = one centimetre</li>
+        <li>1/1,000 m = one millimetre</li>
+        <li>See also micrometre, nanometre, picometre, femtometre, attometre, zeptometre and yoctometre.</li>
+    </ul>
+    
+    <h3>Multiples:</h3>
+    <ul>
+        <li>The most commonly used multiple is the kilometre (1,000 m), but there are numerous other SI multiples of the metre, including decametre (10 m), hectometre (100 m) and megametre (one million metres).</li>
+        <li>The largest SI multiple of the metre is the yottametre, (1,000,000,000,000,000,000,000,000 metres).</li>
+    </ul>
+        </div>
+      </div>
+
+       <br>
+    
+       <p class="container">
+        <label>Miles</label>
+        <input id="inputMiles" type="number" placeholder="Miles" oninput="MilesConverter(this.value)" onchange="MileszConverter(this.value)"style="color: red; background-color: yellowgreen;font-weight: bold;"><br>
+        Kilometers: <span id="outputKilometers" style="background-color: slateblue; color: lightyellow;"></span>
+    </p>
+    
+    
+       <script>
+       function MilesConverter(Miles) {
+       document.getElementById("outputKilometers").innerHTML=Miles*1.609344;
+        }
+       </script>
+    <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#MilestoKilometerformula" id="but">Show formula</button>
+        <div id="MilestoKilometerformula" class="collapse">
+         <h3>Miles to Kilometer formula</h3>
+         
+        <p> km = mi/0.62137</p>
+        </div>
+      </div>
+    
+    <div class="container">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#MoreinformationKilometers" id="but">More information: Kilometers</button>
+        <div id="MoreinformationKilometers" class="collapse">
+         <h2>Kilometers</h2>
+         <h3>Abbreviation/Symbol:</h3>
+         <ul>
+             <li>Km</li>
+             <li>Slang: ‘k’ or ‘kays’ – spoken</li>
+         </ul>
+    
+         <h3>Unit of:</h3>
+         <ul>
+             <li>Length / distance</li>
+         </ul>
+    
+         <h3>Worldwide use:</h3>
+         <ul>
+             <li>The kilometre is used worldwide as a unit used for expressing distances between geographical locations on land, and in most countries is the official unit for this purpose. Primary exceptions are the United Kingdom and the United States of America, where the mile remains as standard.</li>
+         </ul>
+    
+         <h3>Definition:</h3>
+         <ul>
+             <li>The kilometre is unit of length in the metric system equivalent to one thousand metres.</li>
+             <li>1Km is equivalent to 0.6214 miles.</li>
+         </ul>
+    
+         <h3>Origin:</h3>
+         <p>The metric, or decimal, system of weights and measures was adopted in France in 1795. Using the metre as the basis for length measurements, the system is now used officially across the globe, with a few notable exceptions.</p>
+    
+         <h3>Common references:</h3>
+         <ul>
+             <li>The world’s tallest building, Burk Khalifa in Dubai, is 0.82984km tall</li>
+             <li>Niagara Falls, on the U.S.A./Canada border, is approximately 1Km across</li>
+             <li>The peak of Mount Everest is 8.848Km above sea level.</li>
+             <li>Paris in France is 878Km from Berlin in Germany, although you would have to make a journey of over 1050Km to travel from one to the other by land transport.</li>
+             <li>The average distance from Earth to the Moon is 384,400Km.</li>
+         </ul>
+    
+         <h3>Usage context:</h3>
+         <p>The kilometre is most commonly used on road signs to denote the distance left to travel to a given location. It is also the most popular unit for describing the distance between two locations in a straight line (across the surface of the Earth).</p>
+    
+         <h3>Component units:</h3>
+         <ul>
+             <li>1 km = 1000m (metres)</li>
+         </ul>
+    
+         <h3>Multiples:</h3>
+         <ul>
+             <li>Units of length/distance in the metric scale are based on fractions or multiples of one metre, thus there are no official multiples of the kilometre.</li>
+             <li>However, there are metric measurements of length/distance greater than a kilometre that can be expressed in terms of kilometres.</li>
+             <li>A megameter = 1 million metres (or 10,000Km)</li>
+             <li>A gigametre = 1 billion metres (or 1,000,000Km)</li>
+         </ul> 
+        </div>
+      </div>
+    </body>
+    </html>
+    
+       </section>
+        <hr>
+        <footer>
+          Site built by Group2_T1-2008-A0 &copy; Dec-2020.
+        </footer>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  </div>
+
+</body>
+
+</html>

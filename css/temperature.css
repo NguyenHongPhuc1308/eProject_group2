@@ -1,0 +1,100 @@
+
+img {
+    width: 100%;
+    border: black solid thin;
+    background-color: black;
+}
+
+body {
+
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.logo {
+    border: black groove thin;
+}
+
+.intro {
+    width: 90%;
+    color: darkblue;
+    text-align: center;
+}
+
+a:link {
+    font-size: 100%;
+    margin-left: 2rem;
+}
+
+a:hover {
+    color: limegreen;
+    text-decoration: none;
+}
+
+p {
+    font-size: 150%;
+}
+
+.pmetric {
+    width: 50%;
+
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: lightblue;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 300%;
+    text-shadow: rgb(148, 140, 140) 4px 4px 4px;
+}
+
+.f {
+    border: black groove thin;
+    box-shadow: silver 5px 5px 5px;
+    margin: 2rem;
+}
+
+table{
+    margin: auto;
+    width: 80%;
+}
+
+h3{
+    font-weight: bold;
+}
+
+.cel{
+    border: ridge orangered ;
+}
+.cel1{
+    margin: 5rem;
+}
+
+li{
+    font-size: 150%;
+    
+}
+#but{
+    background-color: darkgoldenrod;
+}
+
+body{
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+}
+
+.anh{
+    width: 20%;
+    margin-right: 3rem;
+}
+
+.size{
+    margin-left: 20px;
+    text-align: center;
+}
+

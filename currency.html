@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <div class="logo">
+        <img src="./image/logoweb.png" alt="">
+
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/temperature.css">
+    <style>
+        .noe{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <nav>
+                    <a href="Project.html" style="font-size: 250%;">Home</a>
+                    <a href="metric.html" style="font-size: 250%;">Measurement units</a>
+                    <a href="aboutus.html" style="font-size: 250%;">About Us</a>
+                </nav>
+                <br><br>
+                <section>
+                    <h2 style="text-align: center; margin: auto;">Currency Changes</h2> <br><br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <form action="" id="formEX">
+
+                                        <div>
+                                            <label for="">amount: </label>
+                                            <input type="number" name="number" id="num" value="1" min="1"
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">form: </label>
+                                            <select name="tu" id="tu" class="form-control">
+                                                <option value="1">Vietnam (VND)</option>
+                                                <option value="23000" selected>U.S. dollar (USD)</option>
+                                                <option value="800">Thai Baht(THB)</option>
+                                                <option value="30800">British (GBP)</option>
+                                                <option value="17200">Dollar Singapore (AUD)</option>
+                                                <option value="17000">Australian Dollar (AUD)</option>
+                                                <option value="27400">Euro (EUR)</option>
+                                                <option value="3">LAO Kip (LAK)</option>
+                                                <option value="3600">Chinese Yuan Renminbi (CNY)</option>
+                                                <option value="400">Peso philippine (PHP)</option>
+                                                <option value="5">Riel Campuchia (KHR)</option>
+                                                <option value="5600">Ringgit Malaysia (MYR) </option>
+                                                <option value="2">Rupiah Indonesia (IDR)</option>
+                                                <option value="400">Indian Rupee (INR)</option>
+                                                <option value="400">Rusian Ruble (RUB)</option>
+                                                <option value="800">Taiwan New Dollar (TWD)</option>
+                                                <option value="21">South Korean Won (KRW)</option>
+                                                <option value="200">Japanese Yen (JPY)</option>
+                                                <option value="17800">Canadian Dollar (CAD)</option>
+                                                <option value="3000">Hong Kong Dollar (HKD)</option>
+                                                <option value="373">PotCion (POT)</option>
+                                                <option value="1">Iran Rial (IRR)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">to: </label>
+                                            <select name="den" id="den" class="form-control">
+                                                <option value="1">Vietnam (VND)</option>
+                                                <option value="23000">U.S. dollar (USD)</option>
+                                                <option value="800">Thai Baht(THB)</option>
+                                                <option value="30800">British (GBP)</option>
+                                                <option value="17200">Dollar Singapore (AUD)</option>
+                                                <option value="17000">Australian Dollar (AUD)</option>
+                                                <option value="27400">Euro (EUR)</option>
+                                                <option value="3">LAO Kip (LAK)</option>
+                                                <option value="3600">Chinese Yuan Renminbi (CNY)</option>
+                                                <option value="400">Peso philippine (PHP)</option>
+                                                <option value="5">Riel Campuchia (KHR)</option>
+                                                <option value="5600">Ringgit Malaysia (MYR) </option>
+                                                <option value="2">Rupiah Indonesia (IDR)</option>
+                                                <option value="400">Indian Rupee (INR)</option>
+                                                <option value="400">Rusian Ruble (RUB)</option>
+                                                <option value="800">Taiwan New Dollar (TWD)</option>
+                                                <option value="21">South Korean Won (KRW)</option>
+                                                <option value="200">Japanese Yen (JPY)</option>
+                                                <option value="17800">Canadian Dollar (CAD)</option>
+                                                <option value="3000">Hong Kong Dollar (HKD)</option>
+                                                <option value="373">PotCion (POT)</option>
+                                                <option value="1">Iran Rial (IRR)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="submit" value="accept" class="btn btn-default ">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">result: </label>
+                                            <input type="number" name="num2" id="num2" class="form-control" readonly>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-7" class="color: green">
+                                    <h3 class="noe">World currencies at a glance</h3>
+                                    <div>
+                                        <h3 class="noe">Weneral introduction to money</h3> <br>
+                                        <p>History of currency is a wide concept. In all the history of the world
+                                            currency evolution is
+                                            marked with lots of changes. Some have passed through many stages, while in
+                                            others there has
+                                            been just a few. Historically, money in the form of currency has
+                                            predominated. Usually coins of
+                                            intrinsic value commensurate with the monetary unit, have been the norm.
+                                            Here you can find what
+                                            happened to them during the ages.nCurrencies history are making influence
+                                            thanks to the
+                                            opportunities - economic and social, involving common currency as a tool for
+                                            exchange.
+                                            Allocation and reallocation of territories, even in our days, are changing
+                                            the coverage of some
+                                            currencies.</p> <br>
+                                        <button type="button" class="btn btn-default" data-toggle="collapse"
+                                            data-target="#demo">US Monetary
+                                            History (1690-1866)</button>
+                                        <div id="demo" class="collapse">
+                                            <p>1690 Colonial Notes
+                                                The Massachusetts Bay Colony issued the first paper money in the
+                                                colonies which would later
+                                                form the United States.</p>
+                                            <p>1775 Continental Currency
+                                                American colonists issued paper currency for the Continental Congress to
+                                                finance the
+                                                Revolutionary War. The notes were backed by the “anticipation” of tax
+                                                revenues. Without
+                                                solid backing and easily counterfeited, the notes quickly became
+                                                devalued, giving rise to
+                                                the phrase “not worth a Continental.”</p>
+                                            <p>1781 Nation’s First Bank
+                                                Also to support the Revolutionary War, the continental Congress
+                                                chartered the Bank of North
+                                                America in Philadelphia as the nation’s first “real” bank.</p>
+                                            <p>1781 Nation’s First Bank
+                                                Also to support the Revolutionary War, the continental Congress
+                                                chartered the Bank of North
+                                                America in Philadelphia as the nation’s first “real” bank.</p>
+                                            <p>1785 The Dollar
+                                                The Continental Congress determined that the official monetary system
+                                                would be based on the
+                                                dollar, but the first coin representing the start of this system would
+                                                not be struck for
+                                                several years.</p>
+                                            <p>1791 First U.S. Bank
+                                                After adoption of the Constitution in 1789, Congress chartered the First
+                                                Bank of the United
+                                                States untill 1811 and authorized it to issue paper bank notes to
+                                                eliminate confusion and
+                                                simplify trade. The bank served as the U.S. Treasury’s fiscal agent,
+                                                thus performing the
+                                                first central bank functions.</p>
+                                            <p>1792 Monetary System
+                                                The federal monetary system was established with the creation of the
+                                                U.S. Mint in
+                                                Philadelphia. The first American coins were struck in 1793.</p>
+                                            <p>1816 Second U.S. Bank
+                                                The second Bank of the United States was chartered for 20 years until
+                                                1836.</p>
+                                            <p>1836 State Bank Notes
+                                                With minimum regulation, a proliferation of 1,600 local state-chartered,
+                                                private banks now
+                                                issued paper money. State bank notes, with over 30,000 varieties of
+                                                color and design, were
+                                                easily counterfeited. That, along with bank failures, caused confusion
+                                                and circulation
+                                                problems.</p>
+                                            <p>1861 Civil War
+                                                On the brink of bankruptcy and pressed to finance the Civil War,
+                                                Congress authorized the
+                                                United States Treasury to issue paper money for the first time in the
+                                                form of non-interest
+                                                bearing Treasury Notes called Demand Notes.</p>
+                                            <p>1862 Greenbacks
+                                                Demand Notes were replaced by United States Notes. Commonly called
+                                                “Greenbacks,” they were
+                                                last issued in 1971. The Secretary of the Treasury was empowered by
+                                                Congress to have notes
+                                                engraved and printed, which was done by private banknote companies.</p>
+                                            <p>1863 The Design
+                                                The design of U.S. currency incorporated a Treasury seal, the fine line
+                                                engraving necessary
+                                                for the difficult-to-counterfeit itaglio printing, intricate geometric
+                                                lathe work patterns,
+                                                and distinctive linen paper with embedded red and blue fibers.</p>
+                                            <p>1865 Gold Certificates
+                                                Gold Certificates were issued by the Department of the Treasury against
+                                                gold coin and
+                                                buillion deposits and were circulated until 1933.</p>
+                                            <p>1865 Secret Service
+                                                The Department of the Treasury established the United States Secret
+                                                Service to control
+                                                counterfeits, at that time amounting to one-third of circulated
+                                                currency.</p>
+                                            <p>1866 National Bank Notes
+                                                National Bank Notes, backed by U.S. government securities, became
+                                                predominant. By this time,
+                                                75 percent of bank deposits were held by nationally chartered banks. As
+                                                State Bank Notes
+                                                were replaced, the value of currency stabilized for a time.</p>
+
+                                        </div>
+
+
+                                        <button type="button" class="btn btn-default" data-toggle="collapse"
+                                            data-target="#demo1">History of
+                                            russian ruble</button>
+                                        <div id="demo1" class="collapse">
+                                            The ruble has been the currency in Russia for 500 years. The name ‘rouble’
+                                            is thought to come
+                                            from the Russian for ‘chop,’ literally referring to the way a section was
+                                            cut off a silver
+                                            ingot, which was the very first incarnation of the currency, with each
+                                            section holding a
+                                            different value depending on its weight.
+                                            There is no official symbol for the rouble although many options have been
+                                            suggested over the
+                                            years, including a ‘P’ with two horizontal stripes. However, the
+                                            abbreviation ‘???’ is often
+                                            used in writing.
+                                            In 1710 the rouble was first divided into kopecs, 100 of which made up a
+                                            rouble. Ten roubles are
+                                            sometimes referred to as ‘chervonets’, in reference to the Soviet gold
+                                            chervonets issued in 1923
+                                            that were the equivalent value.
+                                            There have been seven different incarnations of the rouble, due to various
+                                            drastic changes in
+                                            the currency’s value, with the most recent being released in 1998.
+                                            The FIRST rouble was in place for over 200 years up to 1921 when it fell
+                                            dramatically in value.
+                                        </div>
+
+
+                                        <button type="button" class="btn btn-default" data-toggle="collapse"
+                                            data-target="#demo2">History of
+                                            the Euro Currency</button>
+                                        <div id="demo2" class="collapse">The euro was introduced on 1 January 1999 in
+                                            accordance with the
+                                            Maastricht Treaty.
+
+                                            In 1999, several European nations adopted a single currency called the euro
+                                            to strengthen and
+                                            stabilize the continent’s economy. While some goals of the euro have been
+                                            realized, some remain
+                                            out of reach.
+                                            First, participating countries fixed their domestic currencies to the euro.
+                                            This means that
+                                            their currencies were not allowed to fluctuate against the euro or against
+                                            each other. In its
+                                            history, euro was launched as an electronic and cash currency and became
+                                            legal tender on 1
+                                            January 2002.
+
+                                            On July 1, 2002, the German Mark, French Franc, Italian Lira and other
+                                            currencies ceased to
+                                            exist, and on the same day, also the European Central Bank begun running the
+                                            monetary policy of
+                                            the countries which were using the common currency.
+                                            When looking at the history of euro, we can see that attempts to create a
+                                            single currency go
+                                            back some 20 years. The chart below shows the value of the euro against the
+                                            US dollar. Before
+                                            1999, history of euro is shown as a basket of the 11 legacy currencies.
+
+                                            Per history of euro, originally twelve (12) of the 15 EU countries (Germany,
+                                            France, Austria,
+                                            Spain, Portugal, Italy, Belgium, Luxembourg, the Netherlands, Finland,
+                                            Greece and Ireland) were
+                                            members of the so-called Eurozone. Euro history tells us that these states
+                                            were joined later by
+                                            Slovenia (2007), Cyprus (2008), Malta (2008), and Slovakia (2009).
+
+                                            The history of euro is that on 1 January 2002 the euro replaces the old
+                                            national currencies. We
+                                            can see in the history of euro chart above that European currencies have
+                                            always fluctuated
+                                            against the dollar, even as debates have raged about the euro. The euro
+                                            became the single
+                                            currency of 12 European states in 2002.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>currency</th>
+                                                <th>amount</th>
+                                                <th>change into VND</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>USA</td>
+                                                <td>1</td>
+                                                <td>23000</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>VND</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>THB</td>
+                                                <td>1</td>
+                                                <td>800</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>GBP</td>
+                                                <td>1</td>
+                                                <td>30600</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>SGD</td>
+                                                <td>1</td>
+                                                <td>17200</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>AUD</td>
+                                                <td>1</td>
+                                                <td>16800</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>EUR</td>
+                                                <td>1</td>
+                                                <td>27400</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>LAK</td>
+                                                <td>1</td>
+                                                <td>3</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>CNY</td>
+                                                <td>1</td>
+                                                <td>3600</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>PHP</td>
+                                                <td>1</td>
+                                                <td>3600</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>KHR</td>
+                                                <td>1</td>
+                                                <td>6</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- B2 -->
+                                <div class="col-md-4">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>currency</th>
+                                                <th>amount</th>
+                                                <th>change into VND</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MYR</td>
+                                                <td>1</td>
+                                                <td>5600</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>INR</td>
+                                                <td>1</td>
+                                                <td>400</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>IDR</td>
+                                                <td>1</td>
+                                                <td>2</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>RUB</td>
+                                                <td>1</td>
+                                                <td>400</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>TWD</td>
+                                                <td>1</td>
+                                                <td>800</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>KRW</td>
+                                                <td>1</td>
+                                                <td>21</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>JPY</td>
+                                                <td>1</td>
+                                                <td>200</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>CAD</td>
+                                                <td>1</td>
+                                                <td>17600</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>HKD</td>
+                                                <td>1</td>
+                                                <td>3000</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>POT</td>
+                                                <td>1</td>
+                                                <td>373</td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>IRR</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    <script>
+                        $(document).ready(function () {
+                            $("#tu, #den").change(function () {
+                                exchangeRate();
+                            });
+
+                            $("#num").on("input", function () {
+                                exchangeRate();
+                            })
+
+                            $("#formEX").on("submit", function (e) {
+                                e.preventDefault();
+                                exchangeRate();
+                            });
+
+
+                        });
+
+                        function exchangeRate() {
+                            //lay gia tri cua tu
+                            let one = $("#tu").val();
+
+                            //lay gia tri cua den
+                            let two = $("#den").val();
+
+                            //lay gia tri cua so luong
+                            let three = $("#num").val();
+                            let r = three * one / two
+
+                            //gia tri cuoi cung dua vao num2
+                            $("#num2").val(r);
+                        }
+                    </script>
+                </section>
+                <hr>
+                <footer>
+                    Site built by Group2_T1-2008-A0 &copy; Dec-2020. 
+                </footer>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    </div>
+
+</body>
+
+</html>

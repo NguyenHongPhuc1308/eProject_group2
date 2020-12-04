@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <div class="logo">
+        <img src="./image/logoweb.png" alt="">
+
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/temperature.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <nav>
+                    <a href="Project.html" style="font-size: 250%;">Home</a>
+                    <a href="metric.html" style="font-size: 250%;">Measurement units</a>
+                    <a href="aboutus.html" style="font-size: 250%;">About Us</a>
+                </nav>
+                <br><br>
+
+                <section>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h2 style="text-align: center; margin: auto;">Volume Converter</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Fluid ounces
+                                        field to convert
+                                        the value to Milliliters:</p>
+
+                                    <p>
+                                        <label>Fluid ounces: </label>
+                                        <input id="inputFluid" type="number" placeholder="Fluid ounces"
+                                            oninput="flu(this.value)" onchange="flu(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Milliliters:</span> <span id="outputMl"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Milliliters
+                                        field
+                                        to convert the value to Fluid ounces:</p>
+
+                                    <p>
+                                        <label> Milliliters: </label>
+                                        <input id="inputMil" type="number" placeholder="Milliliters"
+                                            oninput="mil(this.value)" onchange="mil(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Fluid ounces:</span> <span id="outputFlu"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Gallons
+                                        field to convert
+                                        the value to Litre:</p>
+
+                                    <p>
+                                        <label>Gallons: </label>
+                                        <input id="inputGallons" type="number" placeholder="Gallons"
+                                            oninput="gal(this.value)" onchange="gal(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Litre:</span> <span id="outputLitre"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Litre
+                                        field
+                                        to convert the value to Gallons:</p>
+
+                                    <p>
+                                        <label> Litre: </label>
+                                        <input id="inputLitre" type="number" placeholder="Litre"
+                                            oninput="lit(this.value)" onchange="lit(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Gallons:</span> <span id="outputGal"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Cubic Feet
+                                        field to convert
+                                        the value to Cubic Meter :</p>
+
+                                    <p>
+                                        <label>Cubic feet: </label>
+                                        <input id="inputCubicfeet" type="number" placeholder="Cubic feet"
+                                            oninput="feet(this.value)" onchange="feet(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Cubic meter:</span> <span id="outputMeter"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Cubic meter
+                                        field
+                                        to convert the value to Cubic feet:</p>
+
+                                    <p>
+                                        <label> Cubic Meter: </label>
+                                        <input id="inputCubicmeter" type="number" placeholder="Cubic meter"
+                                            oninput="meter(this.value)" onchange="meter(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Cubic feet:</span> <span id="outputFeet"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Cubic Yard
+                                        field to convert
+                                        the value to Cubic Meter:</p>
+
+                                    <p>
+                                        <label>Cubic Yard: </label>
+                                        <input id="inputYard" type="number" placeholder="Cubic Yard"
+                                            oninput="yard(this.value)" onchange="yard(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Cubic Meter:</span> <span id="outputMet"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Milliliters
+                                        field
+                                        to convert the value to Fluid ounces:</p>
+
+                                    <p>
+                                        <label> Cubic Meter: </label>
+                                        <input id="inputCubicmeter" type="number" placeholder="Cubic Meter"
+                                            oninput="met(this.value)" onchange="met(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;"
+                                            min="0">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Cubic Yard:</span> <span id="outputYar"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <div class="infor">
+
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Fluid"
+                                    id="but">Information of the Fluid ounces</button>
+                                <div id="Fluid" class="collapse">
+                                    <h1>&#62;&#62;&#62; Fluid ounces &#60;&#60;&#60;</h1>
+                                    <h3>What is Fluid ounces ?</h3>
+                                    <hr>
+                                    <p>A <b>fluid ounce</b> (abbreviated fl oz, fl. oz. or oz. fl., old forms ℥, fl ℥,
+                                        f℥, ƒ ℥)
+                                        is a unit of volume (also called capacity) typically used for measuring liquids.
+                                        Various definitions have been used throughout history, but only two are still in
+                                        common use: the British Imperial and the United States customary fluid ounce.
+                                        <br><br>
+
+                                        An <b>imperial fluid ounce</b> is <sup>1</sup>/<sub>20</sub> of an imperial
+                                        pint, ​<sup>1</sup>/<sub>160</sub> of an imperial
+                                        gallon or approximately 28.41 ml. <br><br>
+
+                                        A <b>US fluid ounce</b> is <sup>1</sup>/<sub>16</sub> of a US fluid pint and
+                                        <sup>1</sup>/<sub>128</sub> of a US liquid gallon or
+                                        approximately 29.57 ml, making it about 4.08% larger than the imperial fluid
+                                        ounce. <br><br>
+
+                                        The fluid ounce is distinct from the ounce as a unit of weight or mass, although
+                                        it is sometimes referred to simply as an "ounce" where context makes the meaning
+                                        clear, such as ounces in a bottle.
+                                        <br>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        The fluid ounce was originally the volume occupied by one ounce of some
+                                        substance, for example wine (in England) or water (in Scotland). The ounce in
+                                        question also varied depending on the system of fluid measure, such as that used
+                                        for wine versus ale. <br><br>
+
+                                        Various ounces were used over the centuries, including the Tower ounce, troy
+                                        ounce, avoirdupois ounce, and ounces used in international trade, such as Paris
+                                        troy, a situation further complicated by the medieval practice of "allowances",
+                                        whereby a unit of measure was not necessarily equal to the sum of its parts. For
+                                        example, the 364-pound woolsack (165 kg) had a 14-pound allowance (6.4 kg) for
+                                        the weight of the sack and other packaging materials. <br><br>
+
+                                        In 1824, the British Parliament defined the imperial gallon as the volume of ten
+                                        pounds of water at standard temperature. The gallon was divided into four
+                                        quarts, the quart into two pints, the pint into four gills, and the gill into
+                                        five ounces; thus, there were 160 imperial fluid ounces to the gallon. <br><br>
+
+                                        This made the mass of a fluid ounce of water approximately one avoirdupois ounce
+                                        (28.35 g), a relationship which remains approximately valid today despite the
+                                        imperial gallon's definition being slightly revised to be 4.54609 litres (thus
+                                        making the imperial fluid ounce exactly 28.4130625 ml). <br><br>
+
+                                        The US fluid ounce is based on the US gallon, which in turn is based on the wine
+                                        gallon of 231 cubic inches that was used in the United Kingdom prior to 1824.
+                                        With the adoption of the international inch, the US fluid ounce became
+                                        29.5735295625 ml exactly, or about 4% larger than the imperial unit.
+                                    </p>
+                                    <br>
+                                    <h3>Fluid ounce conversion formulae: </h3><br>
+                                    <p> fl oz = ml * 29.5735296 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse"
+                                    data-target="#milliliters" id="but">Information of the Milliliters </button>
+                                <div id="milliliters" class="collapse">
+                                    <h1>&#62;&#62;&#62; Milliliters &#60;&#60;&#60;</h1>
+                                    <h3>What is Milliliters ?</h3>
+                                    <hr>
+                                    <p>Imagine playing half of a soccer game without a break. At halftime, you'd by very
+                                        thirsty. Would you rather drink a milliliter of water or a liter of water? A
+                                        milliliter would not even be enough water to fill up a small spoon - you'd still
+                                        be very thirsty! A milliliter is a unit used to measure capacity. It's equal to
+                                        one-thousandth of a liter. In other words, 1,000 milliliters could fit inside a
+                                        one-liter container. The symbol is <b>ml</b>.<br><br>
+
+                                        A milliliter is a measurement used in the metric system. The metric system is a
+                                        system of measurement that uses the liter as the basis for measuring capacity.
+                                        Capacity is the amount of liquid a container can hold. The metric system is used
+                                        in many countries, but in the United States, we often measure capacity in
+                                        gallons and cups. One gallon is equal to about 3.78 liters. One cup is equal to
+                                        about 237 milliliters. <br><br>
+
+                                        You can go to your refrigerator to see how liters and milliliters are used to
+                                        measure the amount of liquid inside a drink container. Big drinks, like water
+                                        jugs and soda bottles, are usually packaged in liters or gallons. Smaller
+                                        drinks, like water bottles or soda cans, are packaged in milliliters or ounces.
+                                        Look for the metric abbreviations on the outside of the package the next time
+                                        you get a drink. Liters are abbreviated with a lower-case or upper-case letter
+                                        L. Milliliters are abbreviated with the letters ml or mL.
+
+
+                                        <br>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        No infomation.
+                                    </p>
+                                    <br>
+                                    <h3>Milliliters conversion formulae: </h3><br>
+                                    <p>
+                                        ml = fl oz * 0.0338140227.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#litre"
+                                    id="but">Information of the Litre </button>
+                                <div id="litre" class="collapse">
+                                    <h1>&#62;&#62;&#62; Litre &#60;&#60;&#60;</h1>
+                                    <h3>What is Litre ?</h3>
+                                    <hr>
+                                    <p>
+                                        The litre (British and Commonwealth spelling) or liter (American spelling) (SI
+                                        symbols L and l, other symbol used: <b>ℓ</b> ) is a metric unit of volume. It is
+                                        equal to 1 cubic decimetre (dm<sup>3</sup>), 1000 cubic centimetres
+                                        (cm<sup>3</sup>) or 0.001 cubic
+                                        metre (m<sup>3</sup>). A cubic decimetre (or litre) occupies a volume of 10 cm ×
+                                        10 cm × 10
+                                        cm (see figure) and is thus equal to one-thousandth of a cubic metre.
+
+                                        The original French metric system used the litre as a base unit. The word litre
+                                        is derived from an older French unit, the litron, whose name came from
+                                        Greek—where it was a unit of weight, not volume—via Latin, and which equalled
+                                        approximately 0.831 litres. The litre was also used in several subsequent
+                                        versions of the metric system and is accepted for use with the SI, although
+                                        not an SI unit—the SI unit of volume is the cubic metre (m<sup>3</sup>). The
+                                        spelling used
+                                        by the International Bureau of Weights and Measures is "litre", a spelling
+                                        which is shared by almost all English-speaking countries. The spelling "liter"
+                                        is predominantly used in American English.
+
+                                        One litre of liquid water has a mass of almost exactly one kilogram, because the
+                                        kilogram was originally defined in 1795 as the mass of one cubic decimetre of
+                                        water at the temperature of melting ice (0 <sup>o</sup>C). Subsequent
+                                        redefinitions of the
+                                        metre and kilogram mean that this relationship is no longer exact.
+                                    </p>
+                                    </p>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        The first name of the litre was "cadil"; standards are shown at the Musée des
+                                        Arts et Métiers in Paris.
+
+                                        The litre was introduced in France in 1795 as one of the new "republican units
+                                        of measurement" and defined as one cubic decimetre. One litre of liquid water
+                                        has a mass of almost exactly one kilogram, due to the gram being defined in 1795
+                                        as one cubic centimetre of water at the temperature of melting ice. The original
+                                        decimetre length was 44.344 lignes, which was revised in 1798 to 44.3296 lignes.
+                                        This made the original litre 1.000974 of today's cubic decimetre. It was against
+                                        this litre that the kilogram was constructed. <br><br>
+
+                                        In 1879, the CIPM adopted the definition of the litre, with the symbol <b>l</b>
+                                        (lowercase letter L). <br><br>
+
+                                        In 1901, at the 3rd CGPM conference, the litre was redefined as the space
+                                        occupied by 1 kg of pure water at the temperature of its maximum density (3.98
+                                        <sup>o</sup>C) under a pressure of 1 atm. This made the litre equal to about
+                                        1.000028 dm<sup>3</sup> (earlier reference works usually put it at 1.000027
+                                        dm<sup>3</sup>). <br><br>
+
+                                        In 1964, at the 12th CGPM conference, the original definition was reverted to,
+                                        and thus the litre was once again defined in exact relation to the metre, as
+                                        another name for the cubic decimetre, that is, exactly 1 dm<sup>3</sup>.
+                                        <br><br>
+
+                                        In 1979, at the 16th CGPM conference, the alternative symbol <b>L</b> (uppercase
+                                        letter L) was adopted. It also expressed a preference that in the future only
+                                        one of these two symbols should be retained, but in 1990 said it was still too
+                                        early to do so.
+                                    </p>
+                                    </p>
+                                    <br>
+                                    <h3>Litre conversion formulae: </h3><br>
+                                    <p>
+                                        li = gal * 0.264172052.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#gallon"
+                                    id="but">Information of the Gallons </button>
+                                <div id="gallon" class="collapse">
+                                    <h1>&#62;&#62;&#62; Gallons &#60;&#60;&#60;</h1>
+                                    <h3>What is Gallons ?</h3>
+                                    <hr>
+                                    <p>
+                                        The gallon is a unit of measurement for volume and fluid capacity in both the US
+                                        customary units and the British imperial systems of measurement. Three
+                                        significantly different sizes are in current use: <br><br>
+
+                                    <ul>
+                                        <li>The imperial gallon (imp gal), defined as 4.54609 litres, which is used in
+                                            the United Kingdom, Canada, and some Caribbean nations</li>
+                                        <li>The US gallon (US gal) defined as 231 cubic inches (exactly 3.785411784
+                                            litres), which is used in the US and some Latin American and Caribbean
+                                            countries</li>
+                                        <li>The US dry gallon ("usdrygal"), defined as ​<sup>1</sup>/<sub>8</sub> US
+                                            bushel (exactly 4.40488377086 litres).</li>
+                                    </ul>
+
+                                    <p>There are four quarts in a gallon and eight pints in a gallon, and they have
+                                        different sizes in different systems. <br><br>
+
+                                        The IEEE standard symbol for both US (liquid) and imperial gallon is <b>gal</b>.
+                                    </p>
+                                    </p>
+                                    </p>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        The term derives most immediately from galun, galon in Old Northern French, but
+                                        the usage was common in several languages, for example jale in Old French and
+                                        gęllet (bowl) in Old English. This suggests a common origin in Romance Latin,
+                                        but the ultimate source of the word is unknown. <br><br>
+
+                                        The gallon originated as the base of systems for measuring wine and beer in
+                                        England. The sizes of gallon used in these two systems were different from each
+                                        other: the first was based on the wine gallon (equal in size to the US gallon),
+                                        and the second one either the ale gallon or the larger imperial gallon. <br><br>
+
+                                        By the end of the 18th century, there were three definitions of the gallon in
+                                        common use:
+                                    <ul>
+                                        <li>The corn gallon, or Winchester gallon, of about 268.8 cubic inches (≈ 4.405
+                                            L).</li>
+                                        <li>The wine gallon, or Queen Anne's gallon, which was 231 cubic inches (≈ 3.785
+                                            L).</li>
+                                        <li>The ale gallon of 282 cubic inches (≈ 4.622 L).</li>
+                                    </ul> <br><br>
+
+                                    <p>
+                                        The corn or dry gallon is used (along with the dry quart and pint) in the United
+                                        States for grain and other dry commodities. It is one-eighth of the (Winchester)
+                                        bushel, originally defined as a cylindrical measure of 37/2
+                                        inches in diameter and 8 inches in depth, which made the dry gallon 8 in × (37/4
+                                        in)<sup>2</sup> × π ≈ 2150.42017 cubic inches. The bushel was later defined to
+                                        be 2150.42
+                                        cubic inches exactly, thus making its gallon exactly 268.8025 in<sup>3</sup>
+                                        (4.40488377086
+                                        L); in previous centuries, there had been a corn gallon of between 271 and 272
+                                        cubic inches.
+                                    </p>
+                                    </p>
+                                    </p>
+                                    <br>
+                                    <h3>Gallons conversion formulae: </h3><br>
+                                    <p>
+                                        gal = li * 3.78541178.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse"
+                                    data-target="#cubicfeet" id="but">Information of the Cubic Feet </button>
+                                <div id="cubicfeet" class="collapse">
+                                    <h1>&#62;&#62;&#62; Cubic Feet &#60;&#60;&#60;</h1>
+                                    <h3>What is Cubic Feet ?</h3>
+                                    <hr>
+                                    <p>
+                                        A cubic measurement is the three-dimensional derivative of a linear measure, so
+                                        a cubic foot is defined as the volume of a cube with sides 1 ft in length.
+                                        <br><br>
+
+                                        In metric terms a cubic foot is a cube with sides 0.3048 metres in length. One
+                                        cubic foot is the equivalent to approximately 0.02831685 cubic metres, or
+                                        28.3169 litres.
+                                    </p>
+                                    </p>
+                                    </p>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        No information.
+                                    </p>
+                                    <br>
+                                    <h3>Cubic Feet conversion formulae: </h3><br>
+                                    <p>
+                                        ft<sup>3</sup> = m<sup>3</sup> * 35.315.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse"
+                                    data-target="#cubicmeter" id="but">Information of the Cubic Meter </button>
+                                <div id="cubicmeter" class="collapse">
+                                    <h1>&#62;&#62;&#62; Cubic Meter &#60;&#60;&#60;</h1>
+                                    <h3>What is Cubic Meter ?</h3>
+                                    <hr>
+                                    <p>
+                                        The <b>cubic meter</b> (in Commonwealth English and international spelling as
+                                        used by the International Bureau of Weights and Measures) or <b>cubic meter</b>
+                                        (in American English) is the SI derived unit of volume. Its SI symbol is m3. It
+                                        is the volume of a cube with edges one metre in length. An alternative name,
+                                        which allowed a different usage with metric prefixes, was the stère, still
+                                        sometimes used for dry measure (for instance, in reference to wood). Another
+                                        alternative name, no longer widely used, was the kilolitre.
+                                    </p>
+                                    </p>
+                                    </p>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        No information.
+                                    </p>
+                                    <br>
+                                    <h3>Cubic Feet conversion formulae: </h3><br>
+                                    <p>
+                                        m<sup>3</sup> = ft<sup>3</sup> / 35.315.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+                <footer>
+                    Site built by Group2_T1-2008-A0 &copy; Dec-2020. 
+                </footer>
+
+
+            </div>
+        </div>
+        <br><br>
+    </div>
+    </div>
+
+    <script>
+        function flu(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputMl").innerHTML = valNum * 29.5735296;
+        }
+
+        function mil(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputFlu").innerHTML = valNum * 0.0338140227;
+        }
+
+        function gal(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputLitre").innerHTML = valNum * 3.78541178;
+        }
+
+        function lit(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputGal").innerHTML = valNum * 0.264172052;
+        }
+
+        function feet(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputMeter").innerHTML = valNum / 35.315;
+        }
+
+        function meter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputFeet").innerHTML = valNum * 35.315;
+        }
+        function yard(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputMet").innerHTML = valNum * 0.764554858;
+        }
+
+        function met(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputYar").innerHTML = valNum * 1.30795062;
+        }
+    </script>
+</body>
+
+</html>

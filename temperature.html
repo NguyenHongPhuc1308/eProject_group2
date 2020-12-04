@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <div class="logo">
+        <img src="./image/logoweb.png" alt="">
+
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/temperature.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <nav>
+                    <a href="Project.html" style="font-size: 250%;">Home</a>
+                    <a href="metric.html" style="font-size: 250%;">Measurement units</a>
+                    <a href="aboutus.html" style="font-size: 250%;">About Us</a>
+                </nav>
+                <br><br>
+                <section>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h2 style="text-align: center; margin: auto;">Temperature Converter</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Fahrenheit
+                                        field to convert
+                                        the value to Celsius:</p>
+
+                                    <p>
+                                        <label>Fahrenheit: </label>
+                                        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                                            oninput="fah(this.value)" onchange="fah(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Celcius:</span> <span id="outputCelcius"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="f">
+                                    <p style="font-size: 150%; font-weight: bolder;">Type a value in the Celsius field
+                                        to convert the value to Fahrenheit:</p>
+
+                                    <p>
+                                        <label>Celsius: </label>
+                                        <input id="inputCelsius" type="number" placeholder="Celsius"
+                                            oninput="cel(this.value)" onchange="cel(this.value)"
+                                            style="color: red; background-color: yellowgreen;font-weight: bold;">
+                                    </p>
+                                    <p> <span style="font-weight: bold;">Fahrenheit:</span> <span id="outputFahrenheit"
+                                            style="background-color: slateblue; color: lightyellow;"></span></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <div class="infor">
+
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse"
+                                    data-target="#celsiustofuh" id="but">Information of the Celsius</button>
+                                <div id="celsiustofuh" class="collapse">
+                                    <h1>&#62;&#62;&#62; CELSIUS &#60;&#60;&#60;</h1>
+                                    <h3>What is Celsius ?</h3>
+                                    <hr>
+                                    <p>Celsius or Centigrade is a temperature sclale with the free zing point of warter
+                                        is 0
+                                        degree and the boint of water is 100 degrees under standard atmospheric pressure
+                                        (101.325 kPa). It is named after the Swedish astronomer Anders Celsius
+                                        (1710-1744).
+                                        The
+                                        symbol is " <sup>o</sup><b>C</b>".</p>
+                                    <br>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        In 1742, Swedish astronomer Anders Celsius (1701–1744) created a temperature
+                                        scale
+                                        that
+                                        was the reverse of the scale now known as "Celsius": 0 represented the boiling
+                                        point
+                                        of
+                                        water, while 100 represented the freezing point of water. In his paper
+                                        Observations
+                                        of
+                                        two persistent degrees on a thermometer, he recounted his experiments showing
+                                        that
+                                        the
+                                        melting point of ice is essentially unaffected by pressure. He also determined
+                                        with
+                                        remarkable precision how the boiling point of water varied as a function of
+                                        atmospheric
+                                        pressure. He proposed that the zero point of his temperature scale, being the
+                                        boiling
+                                        point, would be calibrated at the mean barometric pressure at mean sea level.
+                                        This
+                                        pressure is known as one standard atmosphere. The BIPM's 10th General Conference
+                                        on
+                                        Weights and Measures (CGPM) later defined one standard atmosphere to equal
+                                        precisely
+                                        1,013,250 dynes per square centimeter (101.325 kPa). <br><br>
+                                        In 1743, the Lyonnais physicist Jean-Pierre Christin, permanent secretary of the
+                                        Académie des sciences, belles-lettres et arts de Lyon, inverted the celsius
+                                        scale so
+                                        that 0 represented the freezing point of water and 100 represented the boiling
+                                        point
+                                        of
+                                        water. On 19 May 1743 he published the design of a mercury thermometer, the
+                                        "Thermometer
+                                        of Lyon" built by the craftsman Pierre Casati that used this scale. <br><br>
+                                        In 1744, coincident with the death of Anders Celsius, the Swedish botanist Carl
+                                        Linnaeus
+                                        (1707–1778) reversed Celsius's scale. His custom-made "linnaeus-thermometer",
+                                        for
+                                        use in
+                                        his greenhouses, was made by Daniel Ekström, Sweden's leading maker of
+                                        scientific
+                                        instruments at the time, whose workshop was located in the basement of the
+                                        Stockholm
+                                        observatory. As often happened in this age before modern communications,
+                                        numerous
+                                        physicists, scientists, and instrument makers are credited with having
+                                        independently
+                                        developed this same scale; among them were Pehr Elvius, the secretary of the
+                                        Royal
+                                        Swedish Academy of Sciences (which had an instrument workshop) and with whom
+                                        Linnaeus
+                                        had been corresponding; Daniel Ekström , the instrument maker; and Mårten
+                                        Strömer
+                                        (1707–1770) who had studied astronomy under Anders Celsius. <br><br>
+                                    </p>
+                                    <br>
+                                    <h3>Celsius temperature conversion formulae: </h3><br>
+                                    <table style="font-size: 150%;">
+                                        <tr>
+                                            <td></td>
+                                            <td><b>form Fahrenheit</b></td>
+                                            <td><b>to Fahrenheit</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold ;">Celsius</td>
+                                            <td>[°C] = ([°F] − 32) × ​1.8</td>
+                                            <td>[°F] = [°C] × ​1.8 + 32</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="cel">
+                            <div class="cel1">
+                                <button type="button" class="btn btn-info" data-toggle="collapse"
+                                    data-target="#fahtocelsius" id="but">Information of the Fahrenheit</button>
+                                <div id="fahtocelsius" class="collapse">
+                                    <h1>&#62;&#62;&#62; FAHRENHEIT &#60;&#60;&#60;</h1>
+                                    <h3>What is Fahrenheit ?</h3>
+                                    <hr>
+                                    <p>Fahrenheit is a temperature scale that bases the boiling point of water at 212
+                                        and
+                                        the
+                                        freezing point at 32. It was developed by Daniel Gabriel Fahrenheit, a
+                                        German-born
+                                        scientist who lived and worked primarily in the Netherlands. Today, the scale is
+                                        used
+                                        primarily in the United States and some Caribbean countries. The rest of the
+                                        world
+                                        uses
+                                        the Celsius scale. The symbol is " <sup>o</sup><b>F</b>".</p>
+                                    <br>
+                                    <h3>History.</h3>
+                                    <hr>
+                                    <p>
+                                        Fahrenheit proposed his temperature scale in 1724, basing it on two reference
+                                        points
+                                        of
+                                        temperature. In his initial scale (which is not the final Fahrenheit scale), the
+                                        zero
+                                        point was determined by placing the thermometer in "a mixture of ice, water, and
+                                        salis
+                                        Armoniaci [transl. ammonium chloride] or even sea salt". This combination forms
+                                        a
+                                        eutectic system which stabilizes its temperature automatically: 0 °F was defined
+                                        to
+                                        be
+                                        that stable temperature. A second point, 96 degrees, was approximately the human
+                                        body's
+                                        temperature (sanguine hominis sani, the blood of a healthy man). A third
+                                        point,
+                                        32
+                                        degrees, was marked as being the temperature of ice and water "without the
+                                        aforementioned salts". <br><br>
+                                        According to a German story, Fahrenheit actually chose the lowest air
+                                        temperature
+                                        measured in his hometown Danzig (Gdańsk, Poland) in winter 1708/09 as 0 °F, and
+                                        only
+                                        later had the need to be able to make this value reproducible using brine.
+                                        <br><br>
+                                        According to a letter Fahrenheit wrote to his friend Herman Boerhaave, his scale
+                                        was
+                                        built on the work of Ole Rømer, whom he had met earlier. In Rømer's scale, brine
+                                        freezes
+                                        at zero, water freezes and melts at 7.5 degrees, body temperature is 22.5, and
+                                        water
+                                        boils at 60 degrees. Fahrenheit multiplied each value by four in order to
+                                        eliminate
+                                        fractions and make the scale more fine-grained. He then re-calibrated his scale
+                                        using
+                                        the melting point of ice and normal human body temperature (which were at 30 and
+                                        90
+                                        degrees); he adjusted the scale so that the melting point of ice would be 32
+                                        degrees
+                                        and
+                                        body temperature 96 degrees, so that 64 intervals would separate the two,
+                                        allowing
+                                        him
+                                        to mark degree lines on his instruments by simply bisecting the interval six
+                                        times
+                                        (since 64 is 2 to the sixth power). <br><br>
+                                        Fahrenheit soon after observed that water boils at about 212 degrees using this
+                                        scale.
+                                        The use of the freezing and boiling points of water as thermometer fixed
+                                        reference
+                                        points became popular following the work of Anders Celsius and these fixed
+                                        points
+                                        were
+                                        adopted by a committee of the Royal Society led by Henry Cavendish in 1776.
+                                        Under
+                                        this
+                                        system, the Fahrenheit scale is redefined slightly so that the freezing point of
+                                        water
+                                        is exactly 32 °F, and the boiling point is exactly 212 °F or 180 degrees higher.
+                                        It
+                                        is
+                                        for this reason that normal human body temperature is approximately 98.6° (oral
+                                        temperature) on the revised scale (whereas it was 90° on Fahrenheit's
+                                        multiplication
+                                        of
+                                        Rømer, and 96° on his original scale). <br><br>
+                                        In the present-day Fahrenheit scale, 0 °F no longer corresponds to the eutectic
+                                        temperature of ammonium chloride brine as described above. Instead, that
+                                        eutectic is
+                                        at
+                                        approximately 4 °F on the final Fahrenheit scale. <br><br>
+                                        The Rankine temperature scale was based upon the Fahrenheit temperature scale,
+                                        with
+                                        its
+                                        zero representing absolute zero instead.
+                                    </p>
+                                    <br>
+                                    <h3>Fahrenheit temperature conversion formulae: </h3><br>
+                                    <table style="font-size: 150%;">
+                                        <tr>
+                                            <td></td>
+                                            <td><b>form Fahrenheit</b></td>
+                                            <td><b>to Fahrenheit</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-weight: bold ;">Celsius</td>
+                                            <td>[°C] = ([°F] − 32) × ​1.8</td>
+                                            <td>[°F] = [°C] × ​1.8 + 32</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <footer>
+                    Site built by Group2_T1-2008-A0 &copy; Dec-2020. 
+                </footer>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    </div>
+
+
+    <script>
+        function fah(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputCelcius").innerHTML = (valNum - 32) / 1.8;
+        }
+
+        function cel(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputFahrenheit").innerHTML = (valNum * 1.8) + 32;
+        }
+
+    </script>
+</body>
+
+</html>
