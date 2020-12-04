@@ -26,7 +26,7 @@ eProject documentation at:
 
 ====================================
 
-eProject published at :  https://nguyenhongphuc1308.github.io/eProject_group2/
+eProject published at : https://nguyenhongphuc1308.github.io/eProject_group2/Project.html
 
 
 ============================
