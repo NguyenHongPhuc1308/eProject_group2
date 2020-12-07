@@ -20,7 +20,7 @@ Project title: Metric Conversion.
             
 ====================================
 
-eProject documentation at: https://nguyenhongphuc1308.github.io/eProject_group2/.
+eProject documentation at: 
 ====================================
 
 eProject published at : https://nguyenhongphuc1308.github.io/eProject_group2/Project.html
